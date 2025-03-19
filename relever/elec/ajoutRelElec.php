@@ -36,9 +36,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ajouter_RelElec</title>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 10px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px 3px gray;
+        padding: 20px;
+        gap: 10px;
+    }
+    form select,input {
+        padding: 5px;
+    }
+    form button {
+        text-transform: capitalize;
+        border-radius: 10px;
+        border: 1px solid gray;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 16px;
+    }
+    form button:hover {
+        color: white;
+        background-color: green;
+        transition: ease 200ms;
+    }
+  </style>
 </head>
 <body>
-<h2>Ajouter un relever Electricite</h2>
+    <h2>Ajouter un relever Electricite</h2>
     <form action="" method="POST">
         <label for="codeElec">Code Electricité :</label>
         <input type="text" name="codeElec" required placeholder="C***">

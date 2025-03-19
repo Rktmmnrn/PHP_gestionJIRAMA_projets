@@ -1,5 +1,9 @@
-console.log('console pour le client...');
+console.log('console pour le client euuu');
 
-function btn(){
-    console.log('quelque chose c est passer ???');
-}
+document.addEventListener('DOMContentLoaded', ()=> {
+    const addCli= document.getElementById('addCli');
+    addCli.addEventListener('click', ()=>{
+        console.log('io ee ');
+    });
+    addCli.classList.contains
+})
